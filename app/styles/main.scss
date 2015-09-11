@@ -91,3 +91,19 @@ body {
     border-bottom: 0;
   }
 }
+
+.navbar-brand > img {
+  object-fit: contain;
+  max-height: 800%;
+  height: 800%;
+  margin-top: -65px;
+  margin-left: -100px;
+}
+
+#logo {
+  max-height: 200px;
+  position: absolute;
+  top: -56px;
+  left: -80px;
+  z-index: 9999;
+}
