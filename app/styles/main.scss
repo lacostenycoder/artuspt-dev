@@ -4,6 +4,40 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+.info-top{
+  background-color: #454545;
+  color: #FFF;
+  position: absolute;
+  min-width: 100%;
+  top: 0%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  span {
+    padding: 20px;
+  }
+}
+
+.main{
+  top: 60px;
+  position: relative;
+}
+
+#logo {
+  max-height: 80px;
+  min-height: 80px;
+  position: absolute;
+  top: -30px;
+  left: -1px;
+  z-index: 9999;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -27,8 +61,7 @@ body {
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
-
+  // border-bottom: 1px solid #e5e5e5;
   /* Make the masthead heading the same height as the navigation */
   h3 {
     margin-top: 0;
@@ -100,10 +133,8 @@ body {
   margin-left: -100px;
 }
 
-#logo {
-  max-height: 200px;
-  position: absolute;
-  top: -56px;
-  left: -80px;
-  z-index: 9999;
+
+.slider-padding {
+  padding-top: 16px;
+  padding-bottom: 50px;
 }

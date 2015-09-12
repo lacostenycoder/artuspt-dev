@@ -1,23 +1,34 @@
-<div class="container">
+{{> info-header}}
 
-  <div class="row">
-    {{> navbar}}
+<div class="main">
+  <div class="container">
+    <div class="row">
+      {{> navbar}}
+    </div>
   </div>
 
 
-  <div class="row">
-
-    {{> home }}
-
-    {{> about}}
-
-    {{> contact}}
-
+  <div class="row slider-padding">
+    <div class="slider">
+      {{> slider}}
+    </div>
   </div>
 
+  <div class="container">
+    <div class="row">
 
-  <div class="row">
-    {{> footer}}
+      {{> home }}
+
+      {{> about}}
+
+      {{> contact}}
+
+    </div>
+
+
+    <div class="row">
+      {{> footer}}
+    </div>
+
   </div>
-
 </div>

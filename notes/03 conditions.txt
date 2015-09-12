@@ -1,0 +1,95 @@
+Conditions Treated Page
+Pics (anatomical)
+Narrative to accompany the drop down list below:
+“Artus Physical Therapy specializes in treating a wide variety of musculoskeletal conditions.  From chronic low back pain to sport related injuries and post-operative rehabilitation.  Our full body approach ensures that the source of the issue is identified and treated properly, whether you have low back pain caused by tightness in your hips or shoulder issues as a result of an upper spine issue.
+All too often, patients only receive treatment at the source of their pain, ignoring the actually biomechanical causes of the injury.  We understand the intricate relationships in the musculoskeletal system and are experts at evaluating the whole body to determine the actual biomechanical causes of the injury. “
+
+Drop down list of conditions treated.
+Body Part (eg Shoulder)→Condition name (eg stenosis) *see physiofitness website for examples
+Body part List:
+Back, Neck/Head, Shoulder, Elbow/Wrist/Hands, Hip, Knee, Foot/Ankle
+Condition List:
+Back:
+Low Back Pain
+Herniated Discs
+Stenosis
+Sciatica
+Post-op
+Strains/Sprains
+Fractures
+Spondylolisthesis/Spondylosis
+Sacroiliac dysfunction
+Subluxed Ribs
+Neck/Head:
+Neck Pain
+Herniated Discs
+Stenosis
+Muscle stiffness
+Strains/Sprains
+Cervicogenic headache
+Temperomandibular Joint Pain
+Postural Dysfunction
+Shoulder
+Shoulder Pain
+Rotator Cuff Strains/Tears
+Labral Tears
+Post-Op
+Adhesive Capsulitis (Frozen Shoulder)
+Tendonitis/Tendonosis
+Impingement
+Dislocation/Instability
+Fractures (Humerus, Scapula, Clavicle)
+Acromioclavicular Joint Separation
+Elbow/Wrist/Hands
+Elbow/Wrist Fractures
+Hand/Finger/Thumb Fractures
+Carpal Tunnel Syndrome
+Tennis/Golfer’s Elbow
+Post-Op
+Osteoarthritis
+Sprains/Strains
+Nerve Injuries
+
+
+Hip
+Muscle Strains
+Tendonitis
+Running Injuries
+Trochanteric Bursitis
+Hip Osteoarthritis
+Labral Tears
+Hip Replacement
+Piriformis Syndrome
+Hip Impingement
+Hip Fractures
+Avascular Necrosis
+Knee
+Patellofemoral Pain
+Iliotibial Band Syndrome
+Chondromalacia
+Running Injuries
+ACL Reconstruction
+Meniscal Tears
+Ligament Injuries
+Muscle Strains
+Tendonitis
+Knee Osteoarthritis
+Knee Replacement
+Osteochondritis Dissecans
+Osgood-Schlatter Syndrome
+Bakers Cyst
+
+Foot/Ankle
+Plantar Fasciitis
+Ankle Sprains
+Anterior & Posterior Shin Splints
+Posterior Tibialis Insufficiency
+Tendonitis
+Strains/Sprains
+Running Injuries
+Heel Spurs
+Stress Fractures
+Calf Strain
+Hallux Rigidus
+Neuromas
+Tarsal Tunnel Syndrome
