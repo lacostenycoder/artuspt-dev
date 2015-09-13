@@ -9,6 +9,10 @@ $(document).ready(function(){
      var $el = $(this);
      navSelector($el.attr('id'));
      showSlider($el.attr('id'));
+     // tooggle nav when item clicked in collapsed mode
+    //  if($('.navbar-toggle').css('display') === "block"){
+    //    $('.navbar-toggle').click();
+    //  }
   });
 //  breadcrumb used for about pages
   $(".breadcrumb a").on("click", function(){

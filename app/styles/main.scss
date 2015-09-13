@@ -3,6 +3,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
+@import "bootstrap_overrides.scss";
 
 .info-top{
   background-color: #454545;
@@ -23,11 +24,12 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
   position: relative;
 }
 
+
 #logo {
   max-height: 80px;
   min-height: 80px;
   position: absolute;
-  top: -30px;
+  top: -20px;
   left: -1px;
   z-index: 9999;
 }
@@ -135,6 +137,36 @@ body {
 
 
 .slider-padding {
-  padding-top: 16px;
+  //padding-top: 16px;
   padding-bottom: 50px;
+}
+
+.about{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  background-color: #eee;
+  font-size: 1.425em;
+  font-weight: 200;
+  border-radius: 0.5%;
+}
+
+.mug-container{
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+.mug {
+  border: solid 5px #337ab7;
+  border-radius: 50%;
+  max-width: 200px;
+}
+
+.bio {
+  margin: 40px 40px 40px 40px;
+  padding-bottom: 40px;
+}
+
+.page-section {
+  margin-top: -54px;
 }
