@@ -6,6 +6,8 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import "bootstrap_overrides.scss";
 
 .info-top{
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 100;
   background-color: #454545;
   color: #FFF;
   position: absolute;
@@ -16,6 +18,15 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
   margin-bottom: 20px;
   span {
     padding: 20px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .glyphicon {
+    display: none;
+  }
+  .info-top {
+    font-size: 0.9em;
   }
 }
 
