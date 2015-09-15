@@ -85,4 +85,25 @@ $(document).ready(function(){
 
   initSlider();
 
+  // load externals
+
+  $.getScript("scripts/conditions.js", function(){
+  });
+
+  function htmlBuilder(fileName){
+    var str = fileName + '.html #loaded-html'
+    return str
+  }
+
+  $(".conditions-loader").on("click", function(event){
+    var filename = event.target.id.split('_')[1];
+    console.log(filename);
+    filename = htmlBuilder(filename);
+    $('#conditions-content').load(filename);
+    var callback = function(){
+      location.href = "#loader";
+    }
+    callback();
+  });
+
 });
