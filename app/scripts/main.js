@@ -87,8 +87,9 @@ $(document).ready(function(){
 
   // load externals
 
-  $.getScript("scripts/conditions.js", function(){
-  });
+  // var conditions = $.getScript("scripts/conditions.js", function(loadConditions){
+  //   return loadConditions;
+  // });
 
   function htmlBuilder(fileName){
     var str = fileName + '.html #loaded-html'
