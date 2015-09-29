@@ -7,6 +7,7 @@ $(document).ready(function(){
      $active.removeClass("active");
      $(this).parent().addClass("active");
      var $el = $(this);
+     console.log($el);
      navSelector($el.attr('id'));
      showSlider($el.attr('id'));
      // tooggle nav when item clicked in collapsed mode
@@ -96,6 +97,7 @@ $(document).ready(function(){
     return str
   }
 
+
   $(".conditions-loader").on("click", function(event){
     var filename = event.target.id.split('_')[1];
     console.log(filename);
@@ -103,8 +105,14 @@ $(document).ready(function(){
     $('#conditions-content').load(filename);
     var callback = function(){
       location.href = "#loader";
+      $(".conditions-head").slideUp("slow", function(){});
     }
     callback();
   });
 
+  //show conditinos jumbotron agin on click
+  $("#conditions").on('click', function(){
+    $('.conditions-head').slideDown("slow", function(){});
+  });
+  
 });

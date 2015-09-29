@@ -4,9 +4,34 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 @import "bootstrap_overrides.scss";
+@import "image-vingette.scss";
 
-#conditions-content {
-  // width: 100%;
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+.conditions-content-box {
+  top: 50%;
+  left: 50%;
+  z-index: 9999;
+  border-radius: 1%;
+  background-color: #333;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.conditions-list {
+  text-align: center;
+}
+
+ul {
+    list-style-position: inside;
+    padding-left:0;
+}
+
+.list-inline {
+  padding-left: 20px;
 }
 
 .info-top{

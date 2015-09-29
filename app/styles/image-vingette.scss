@@ -1,0 +1,76 @@
+/* Border & Vignette Setup */
+
+figure{
+  position:               relative;
+  display:                block;
+  line-height:            0;
+  // width:                  500px;
+  // height:                 333px;
+  margin-top: 20px;
+  margin-bottom:          2em;
+  border:                 .4em solid #fff;
+  -webkit-box-shadow:     0 .1em .3em rgba(0,0,0,.25);
+  -moz-box-shadow:        0 .1em .3em rgba(0,0,0,.25);
+}
+
+figure::before{
+  content:                "";
+  position:               absolute;
+  top:                    -1em;
+  bottom:                 -1em;
+  left:                   -1em;
+  right:                  -1em;
+
+}
+
+figure::before,
+figure img{
+  // outline:                1px solid #ccc;
+}
+
+figure.vignette img{
+  z-index:                1;
+  position:               relative;
+  display:                block;
+  width:                  100%;
+  height:                 100%;
+
+}
+
+/* Overlay Method */
+
+figure.overlay::after{
+  position:               absolute;
+  top:                    0;
+  bottom:                 0;
+  left:                   0;
+  right:                  0;
+  content:                "";
+  z-index:                2;
+
+  pointer-events:         none; /* "all" disables mouse access to image */
+
+  background-image:       -moz-radial-gradient(
+    center, circle contain, rgba(0,0,0,0) 125px, rgba(0,0,0,.5) 250px);
+  background-image:       -webkit-gradient(
+    radial, 50% 50%, 125, 50% 50%, 250, from(rgba(0,0,0,0)), to(rgba(0,0,0,.5)) );
+}
+
+/* Overlay & Inset Method */
+
+figure.overlay.inset::after{
+  -moz-box-shadow:        inset 0 0 150px rgba(0,0,0,.75);
+  -webkit-box-shadow:     inset 0 0 150px rgba(0,0,0,.75);
+}
+
+/* Mask Method */
+
+figure.mask{
+  background-color:  #000;
+}
+
+figure.mask img{
+  -webkit-mask-box-image: -webkit-gradient(
+    radial, 50% 50%, 125, 50% 50%, 250, from(#fff), to(rgba(0,0,0,.33))
+  );
+}

@@ -1,0 +1,30 @@
+<!-- <svg id="overlay" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="gradient" x1="0" y1="00%" x2 ="0" y2="100%">
+      <stop stop-color="black" offset="0"/>
+      <stop stop-color="white" offset="1"/>
+    </linearGradient>
+
+    <mask id="masking" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
+      <circle cx=".5" cy=".5" r=".35" fill="white" />
+    </mask>
+  </defs>
+
+</svg> -->
+
+<?xml version="1.0"?>
+<svg width="120" height="120" viewBox="0 0 120 120"
+     xmlns="http://www.w3.org/2000/svg" version="1.1"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <defs>
+        <radialGradient id="MyGradient">
+            <stop offset="10%" stop-color="white"/>
+            <stop offset="95%" stop-color="black"/>
+        </radialGradient>
+    </defs>
+    <mask id="masking" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
+      <circle fill="url(#MyGradient)"
+            cx="60" cy="60" r="50"/>
+    </mask>
+</svg>
