@@ -33,15 +33,13 @@ $breadcrumb-separator:          ">" !default;
   }
 
   > .active {
-    // border: 1px solid #337ab7;
-    // border-spacing: 10px;
-    // line-height: 40px;
     color: $breadcrumb-active-color;
     font-weight: bold;
     @include linkless();
   }
 
   @include linkless();
+
 }
 
 nav {
@@ -50,6 +48,17 @@ nav {
   margin-top: 0;
   top: -44px;
 }
+
+
+@media (min-width: 730px) {
+  ol.breadcrumb {
+    display: inline-block;
+    min-width: 730px;
+    white-space: nowrap;
+    margin-top: 0px;
+  }
+}
+
 
 // override boostrap navbar default collapse set wider for more links
 @media (max-width: 960px) {
@@ -87,4 +96,9 @@ nav {
     .collapse.in{
   		display:block !important;
 	}
+
+  .jumbotron {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }

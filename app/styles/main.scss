@@ -64,6 +64,11 @@ ul {
   position: relative;
 }
 
+.email, .phone {
+  a, a:hover {
+    text-decoration: none;
+  }
+}
 
 #logo {
   max-height: 76px;
@@ -135,12 +140,21 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
-  text-align: center;
+  text-align: justify;
   border-bottom: 1px solid #e5e5e5;
   .btn {
     font-size: 21px;
     padding: 14px 24px;
   }
+}
+
+.list-paragraph {
+  @extend p;
+  // margin: 6px 0 0 20px;
+  // ul  li {
+  //   margin-top: 0;
+  //   margin-bottom: 0;
+  // }
 }
 
 /* Supporting marketing content */
@@ -189,7 +203,7 @@ body {
   padding-bottom: 50px;
 }
 
-.about {
+.about, .hands {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 40px;
@@ -209,6 +223,7 @@ body {
 .mug-container{
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 16px;
   img { text-align: center; }
 }
 
@@ -223,9 +238,9 @@ body {
 }
 
 .bio {
-  margin: 40px 20px 40px 20px;
+  margin: 40px 40px 40px 40px;
   padding-bottom: 40px;
-  text-align: center;
+  text-align: justify;
 }
 
 .page-section {

@@ -7,33 +7,30 @@ $(document).ready(function(){
      $active.removeClass("active");
      $(this).parent().addClass("active");
      var $el = $(this);
-     console.log($el);
      navSelector($el.attr('id'));
      showSlider($el.attr('id'));
-     // tooggle nav when item clicked in collapsed mode
-    //  if($('.navbar-toggle').css('display') === "block"){
-    //    $('.navbar-toggle').click();
-    //  }
   });
-//  breadcrumb used for about pages
+//  breadcrumb navigation requires id with section prefix and
+// data attribute 'pageId' for grouping. this pattern is reusable
+// for pages which require sub-nav
   $(".breadcrumb a").on("click", function(){
     var $active = $(".breadcrumb").find(".active");
      $active.removeClass("active");
      $(this).parent().addClass("active");
      var $el = $(this);
-    //  console.log($el.attr('id'));
-     breadcrumbSelector($el.attr('id'));
+     var sectionId = $el.attr('id');
+     var pageId = $el.parent().closest('div').data('pageId');
+     breadcrumbSelector(pageId, sectionId);
   });
 
-  function breadcrumbSelector(unHide){
-    var abouts = $('.about');
-    console.log(abouts[0]);
-    $.each(abouts, function(){
+  function breadcrumbSelector(pageId, sectionId){
+    var hideGroup = $('.'+pageId);
+    $.each(hideGroup, function(){
       if(this.className.split(' ')[0] != "hidden"){
         $(this).addClass('hidden');
       }
     });
-    $('#'+'about-'+unHide).removeClass('hidden');
+    $('#'+pageId+'-'+sectionId).removeClass('hidden');
   }
 
   function navSelector(unHide){
@@ -55,7 +52,7 @@ $(document).ready(function(){
     }
   }
 
-  $('#home').click();
+  $('#home').click(); // show home section when page loads
 
   // init slider
   function initSlider() {
@@ -86,21 +83,15 @@ $(document).ready(function(){
 
   initSlider();
 
-  // load externals
-
-  // var conditions = $.getScript("scripts/conditions.js", function(loadConditions){
-  //   return loadConditions;
-  // });
-
   function htmlBuilder(fileName){
     var str = fileName + '.html #loaded-html'
     return str
   }
 
-
+// dynamically load pages for 'conditions treated' sections
   $(".conditions-loader").on("click", function(event){
     var filename = event.target.id.split('_')[1];
-    console.log(filename);
+    //console.log(filename);
     filename = htmlBuilder(filename);
     $('#conditions-content').load(filename);
     var callback = function(){
@@ -110,9 +101,9 @@ $(document).ready(function(){
     callback();
   });
 
-  //show conditinos jumbotron agin on click
+  //unhide conditions main jumbotron again when nav-button clicked
   $("#conditions").on('click', function(){
     $('.conditions-head').slideDown("slow", function(){});
   });
-  
+
 });
