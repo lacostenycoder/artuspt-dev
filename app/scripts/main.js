@@ -1,6 +1,7 @@
 // jshint devel:true
 $(document).ready(function(){
-
+  var defaultImage;
+  defaultImage = "s1.jpg";
 // navbar unhides selected items
   $(".nav a").on("click", function(){
     var $active = $(".nav").find(".active");
@@ -105,5 +106,16 @@ $(document).ready(function(){
   $("#conditions").on('click', function(){
     $('.conditions-head').slideDown("slow", function(){});
   });
+
+
+  // $(".nav a").click(function(){
+  //   var body = $('body');
+  //   var images = ['s1.jpg', 's2.jpg','s3.jpg','s4.jpg'];
+  //   var backgroundImg = images[Math.floor(Math.random() * images.length)];
+  //   alert(typeof(backgroundImg));
+  //   body.css({'background': "url('s2.jpg') norepeat center center" });
+  //   // console.log(body.css("background-image"));
+  // })
+
 
 });

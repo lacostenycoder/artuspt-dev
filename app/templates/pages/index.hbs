@@ -2,7 +2,7 @@
 layout: default.hbs
 ---
 {{> info-header}}
-<div class="main">
+<div class="main wrapper">
   {{> navbar}}
   <div class="slider">
     {{> slider}}
@@ -31,11 +31,8 @@ layout: default.hbs
 
 
     </div>
-
-
-    <div class="row">
-      {{> footer}}
-    </div>
-
   </div>
+  <footer class="scut-sticky-footer">
+      {{> footer}}
+  </footer>
 </div>

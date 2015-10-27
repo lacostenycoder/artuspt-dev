@@ -5,8 +5,17 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 // endbower
 @import "bootstrap_overrides.scss";
 @import "image-vingette.scss";
+@import "_scut.scss";
 
 @import url(https://fonts.googleapis.com/css?family=Raleway);
+
+@include scut-sticky-footer-fluid();
+
+.body {
+  background-size: cover !important;
+}
+
+
 
 .conditions-content-box {
   top: 50%;
@@ -51,9 +60,6 @@ ul {
 }
 
 @media screen and (max-width: 568px) {
-  .glyphicon {
-    display: none;
-  }
   .info-top {
     font-size: 0.8em;
   }
@@ -62,6 +68,7 @@ ul {
 .main{
   top: 60px;
   position: relative;
+  height: 100%;
 }
 
 .email, .phone {
@@ -114,6 +121,9 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+// .footer {
+//   margin-top: 40px;
+// }
 
 /* Custom page header */
 .header {
@@ -129,9 +139,10 @@ body {
 
 /* Custom page footer */
 .footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+  margin-top: 0;
+  padding-top: 0;
+  background-color: #777;
+  // border-top: 1px solid #e5e5e5;
 }
 
 .container-narrow > hr {
@@ -245,4 +256,23 @@ body {
 
 .page-section {
   margin-top: -54px;
+}
+
+.scut-sticky, .scut-sticky footer {
+  background: black;
+  color: white;
+}
+
+.footer-body {
+  background-color: #333;
+  color: #FFF;
+  padding: 80px;
+  .footer-children {
+    background-color: inherit;
+    color: inherit;
+  }
+}
+
+.flow-bottom {
+  min-height: 40vh;
 }
