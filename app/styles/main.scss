@@ -69,6 +69,7 @@ ul {
   top: 60px;
   position: relative;
   height: 100%;
+  width: 100%;
 }
 
 .email, .phone {
@@ -114,16 +115,11 @@ body {
   padding-bottom: 20px;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+.breadcrumb {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
 }
-// .footer {
-//   margin-top: 40px;
-// }
 
 /* Custom page header */
 .header {
@@ -177,9 +173,12 @@ body {
 }
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
+@media screen and (min-width: 992px) {
+
+  #contact-page {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* Remove the padding we set earlier */
@@ -199,6 +198,10 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+
+  #bio-1 {
+    border-right: solid #000 1px;
+  }
 }
 
 .navbar-brand > img {
@@ -210,7 +213,6 @@ body {
 }
 
 .slider-padding {
-  //padding-top: 16px;
   padding-bottom: 50px;
 }
 
@@ -224,17 +226,21 @@ body {
   border-radius: 0.5%;
 }
 
+#about-page {
+  margin-bottom: 20px;
+}
+
 .about-sapce {
   @extend about;
 }
-// .about-sapce::after {
-//   content: "<br><br>"
-// }
 
 .mug-container{
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 16px;
+  max-width: 300px !important;
+  margin-left: auto;
+  margin-right: auto;
   img { text-align: center; }
 }
 
@@ -242,26 +248,36 @@ body {
   margin: 0 auto;
 }
 
-.mug {
-  border: solid 5px #AAA;
-  border-radius: 1%;
-  max-width: 600px;
-}
 
 .bio {
-  margin: 40px 40px 40px 40px;
-  padding-bottom: 40px;
   text-align: justify;
 }
+
+.bios-wrapper {
+  padding-bottom: 40px;
+}
+
+// #about-therapists::after { content: ''; display: block; clear: both;}
+// boostrap clearfix does this
 
 .page-section {
   margin-top: -54px;
 }
 
+.page-section ol {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  float: none;
+  min-width: 100%;
+}
+
+
 .scut-sticky, .scut-sticky footer {
   background: black;
   color: white;
 }
+
 
 .footer-body {
   background-color: #333;
