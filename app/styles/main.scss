@@ -15,7 +15,10 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
   background-size: cover !important;
 }
 
-
+.top-logo {
+  margin-top: 20px;
+  padding: 0 10px;
+}
 
 .conditions-content-box {
   top: 50%;
@@ -31,7 +34,8 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 }
 
 .conditions-list {
-  text-align: center;
+  padding-top: 10px;
+  text-align: left;
 }
 
 ul {
@@ -78,7 +82,7 @@ ul {
   }
 }
 
-#logo {
+#nav-logo {
   max-height: 76px;
   min-height: 76px;
   position: absolute;
@@ -137,8 +141,6 @@ body {
 .footer {
   margin-top: 0;
   padding-top: 0;
-  background-color: #777;
-  // border-top: 1px solid #e5e5e5;
 }
 
 .container-narrow > hr {
@@ -157,11 +159,6 @@ body {
 
 .list-paragraph {
   @extend p;
-  // margin: 6px 0 0 20px;
-  // ul  li {
-  //   margin-top: 0;
-  //   margin-bottom: 0;
-  // }
 }
 
 /* Supporting marketing content */
@@ -169,38 +166,6 @@ body {
   margin: 40px 0;
   p + h4 {
     margin-top: 28px;
-  }
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 992px) {
-
-  #contact-page {
-    max-width: 760px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
-
-  #bio-1 {
-    border-right: solid #000 1px;
   }
 }
 
@@ -212,8 +177,11 @@ body {
   margin-left: -100px;
 }
 
-.slider-padding {
-  padding-bottom: 50px;
+.slider {
+  position: relative;
+  padding-bottom: 0;
+  margin: 0;
+  top: -68px;
 }
 
 .about, .hands {
@@ -283,6 +251,7 @@ body {
   background-color: #333;
   color: #FFF;
   padding: 80px;
+  // margin-top: -80px;
   .footer-children {
     background-color: inherit;
     color: inherit;
@@ -290,5 +259,44 @@ body {
 }
 
 .flow-bottom {
-  min-height: 40vh;
+  // min-height: 25vh;
+}
+
+.main {
+  // background-color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+/* Responsive: Portrait tablets and up */
+
+@media screen and (min-width: 992px) {
+
+  #contact-page {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+
+  #bio-1 {
+    border-right: solid #000 1px;
+  }
 }
