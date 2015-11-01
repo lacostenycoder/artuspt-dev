@@ -1,43 +1,49 @@
 <div class="page-section hidden" id="about-page" data-page-id="about">
-    <ol class="breadcrumb">
-      <!-- <li class="active"><a href="#" id="mission">Mission Statement</a></li> -->
-      <li><a class="active"href="#" id="philosophy">About Us</a></li>
-      <li><a class="" href="#" id="therapists">Our Therapists</a></li>
-      <br class="visible-xs"/>
-      <li><a class="" href="#" id="space">Our Space</a></li>
-      <li><a class="" href="#" id="testimonials">Testimonials</a></li>
-    </ol>
-  <div class="jumbotron about" id="about-philosophy">
-    <p><strong>Our clinical philosophy:</strong> We believe it is not enough to just go through a cookie cutter protocol approach in an attempt to give our patient’s temporarily pain relief.  Our goal is to identify and treat the cause of the problem so that the issue never comes back.  This requires much more insight and clinical skill than merely sticking a patient on ice or heat and having them do a rote gym exercise.  We look much closer to understand what specific muscle imbalances and biomechanical faults are at play.  This requires focus and time, and our one-on-one 45-minute treatment sessions allow us to do this.  In a factory, assembly line therapy practice, where a therapist is juggling two or three patients at once, this is not possible.</p>
-    <p><strong>Our mission statement:</strong> To provide exceptional, individualized, and comprehensive physical therapy care, achieving our patient’s goals and fully restoring them to their ideal physical condition.</p>
-  </div>
 
-  <div class="about hidden bios clearfix" id="about-therapists">
-    <div class="bios-wrapper col-md-6" id="bio-1">
-      <div class="mug-container bio text-center">
-        <img class="img-rounded img-responsive img-center mug" src="images/chris.jpg"/>
+  <ul class="nav nav-tabs" role="tablist">
+    <!-- <li class="active"><a href="#" id="mission">Mission Statement</a></li> -->
+    <li role="presentation"><a role="tab" data-toggle="tab" class="active"href="#philosophy" >About Us</a></li>
+    <li role="presentation"><a role="tab" data-toggle="tab" href="#therapists" >Our Therapists</a></li>
+    <li role="presentation"><a role="tab" data-toggle="tab" href="#space" >Our Space</a></li>
+    <li role="presentation"><a role="tab" data-toggle="tab" href="#testimonials" >Testimonials</a></li>
+  </ul>
+
+  <div class="tab-content">
+
+    <div class="tab-pane active jumbotron about" role="tabpanel" id="philosophy">
+      <p><strong>Our clinical philosophy:</strong> We believe it is not enough to just go through a cookie cutter protocol approach in an attempt to give our patient’s temporarily pain relief.  Our goal is to identify and treat the cause of the problem so that the issue never comes back.  This requires much more insight and clinical skill than merely sticking a patient on ice or heat and having them do a rote gym exercise.  We look much closer to understand what specific muscle imbalances and biomechanical faults are at play.  This requires focus and time, and our one-on-one 45-minute treatment sessions allow us to do this.  In a factory, assembly line therapy practice, where a therapist is juggling two or three patients at once, this is not possible.</p>
+      <p><strong>Our mission statement:</strong> To provide exceptional, individualized, and comprehensive physical therapy care, achieving our patient’s goals and fully restoring them to their ideal physical condition.</p>
+    </div>
+
+    <div class="tab-pane about bios clearfix" role="tabpanel" id="therapists">
+      <div class="bios-wrapper col-md-6" id="bio-1">
+        <div class="mug-container bio text-center">
+          <img class="img-rounded img-responsive img-center mug" src="images/chris.jpg"/>
+        </div>
+        <div class="bio">
+          <strong>Chris Rosen, DPT</strong> graduated from Columbia University’s Program in Physical Therapy, where he obtained a masters in physical therapy in 2003 and doctorate in 2004. Over the last decade he has received significant training in manual therapy and custom orthotic fabrication. Dr. Rosen is an addictive golfer. He also trains and competes in jiu-jitsu and kickboxing and loves to snowboard and mountain bike.
+        </div>
       </div>
-      <div class="bio">
-        <strong>Chris Rosen, DPT</strong> graduated from Columbia University’s Program in Physical Therapy, where he obtained a masters in physical therapy in 2003 and doctorate in 2004. Over the last decade he has received significant training in manual therapy and custom orthotic fabrication. Dr. Rosen is an addictive golfer. He also trains and competes in jiu-jitsu and kickboxing and loves to snowboard and mountain bike.
+      <div class="bios-wrapper col-md-6" id="bio-2">
+        <div class="mug-container text-center">
+          <img class="img-rounded img-responsive img-center mug" src="images/charles.jpg"/>
+        </div>
+        <div class="bio">
+          <strong>Charles Polit, DPT, CHT</strong> graduated with his doctorate in physical therapy from Columbia University in 2004.  He has more than ten years of experience in orthopedic physical therapy, and held the management position of clinical director for most of that time.  Dr. Polit received his certification in hand therapy five years ago and specializes in hand and upper extremity disorders.  He is an avid runner and triathlete, and his goal is to compete in an Ironman Triathlon in the near future.
+        </div>
       </div>
     </div>
-    <div class="bios-wrapper col-md-6" id="bio-2">
-      <div class="mug-container text-center">
-        <img class="img-rounded img-responsive img-center mug" src="images/charles.jpg"/>
-      </div>
-      <div class="bio">
-        <strong>Charles Polit, DPT, CHT</strong> graduated with his doctorate in physical therapy from Columbia University in 2004.  He has more than ten years of experience in orthopedic physical therapy, and held the management position of clinical director for most of that time.  Dr. Polit received his certification in hand therapy five years ago and specializes in hand and upper extremity disorders.  He is an avid runner and triathlete, and his goal is to compete in an Ironman Triathlon in the near future.
-      </div>
-    </div>
-  </div>
 
-  <div class="about about-space hidden" id="about-space">
-      We are located in private office space of the <strong><a href="http://www.elysiumfitness.net/" target="_blank">Elysium Fitness Club.</a></strong> Elysium Fitness Club is an upscale health and fitness club providing one-on-one personal training, massage, nutritional counseling and group fitness. The facility features the latest Cybex, Free Motion resistance and cardiovascular machines. Instead of the standard industrial look, Elysium is surrounded by mahogany and arched ceilings, creating a warm and inviting atmosphere.
-    <br/>
-    <br/>
-      Our patients have full access to cardiovascular and weight training equipment, locker rooms and amenities at the Elysium Fitness Club. Our office has private treatment areas and space for exercises, manual therapy, and therapeutic modalities.
-    <br/>
-    <br/>
+
+    <div class="about about-space tab-pane" role="tabpanel" id="space">
+        We are located in private office space of the <strong><a href="http://www.elysiumfitness.net/" target="_blank">Elysium Fitness Club.</a></strong> Elysium Fitness Club is an upscale health and fitness club providing one-on-one personal training, massage, nutritional counseling and group fitness. The facility features the latest Cybex, Free Motion resistance and cardiovascular machines. Instead of the standard industrial look, Elysium is surrounded by mahogany and arched ceilings, creating a warm and inviting atmosphere.
+      <br/>
+      <br/>
+        Our patients have full access to cardiovascular and weight training equipment, locker rooms and amenities at the Elysium Fitness Club. Our office has private treatment areas and space for exercises, manual therapy, and therapeutic modalities.
+      <br/>
+      <br/>
+    </div>
+
   </div>
 
 </div>

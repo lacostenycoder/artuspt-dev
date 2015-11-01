@@ -3,7 +3,7 @@ $(document).ready(function(){
   var defaultImage;
   defaultImage = "s1.jpg";
 // navbar unhides selected items
-  $(".nav a").on("click", function(){
+  $("#myNavbar .nav a").on("click", function(){
     var $active = $(".nav").find(".active");
      $active.removeClass("active");
      $(this).parent().addClass("active");
@@ -14,15 +14,16 @@ $(document).ready(function(){
 //  breadcrumb navigation requires id with section prefix and
 // data attribute 'pageId' for grouping. this pattern is reusable
 // for pages which require sub-nav
-  $(".breadcrumb a").on("click", function(){
-    var $active = $(".breadcrumb").find(".active");
-     $active.removeClass("active");
-     $(this).parent().addClass("active");
-     var $el = $(this);
-     var sectionId = $el.attr('id');
-     var pageId = $el.parent().closest('div').data('pageId');
-     breadcrumbSelector(pageId, sectionId);
-  });
+
+  // $(".breadcrumb a").on("click", function(){
+  //   var $active = $(".breadcrumb").find(".active");
+  //    $active.removeClass("active");
+  //    $(this).parent().addClass("active");
+  //    var $el = $(this);
+  //    var sectionId = $el.attr('id');
+  //    var pageId = $el.parent().closest('div').data('pageId');
+  //    breadcrumbSelector(pageId, sectionId);
+  // });
 
   function breadcrumbSelector(pageId, sectionId){
     var hideGroup = $('.'+pageId);

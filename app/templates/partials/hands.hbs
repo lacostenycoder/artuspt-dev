@@ -1,22 +1,19 @@
 <div class="page-section hidden" id="hands-page" data-page-id="hands">
 
-  <ol class="breadcrumb">
-    <li class="active"><a href="#" id="general">General Info</a></li>
-    <li><a href="#" id="philosopy">Philosophy of Care</a></li>
-    <li><a href="#" id="cht">CHT</a></li>
-    <li><a href="#" id="conditions">Hand Conditions</a></li>
-    <li><a href="#" id="techniques">Techniques</a></li>
-  </ol>
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a role="tab" data-toggle="tab" class="active" href="#hands-general">General Info</a></li>
+    <!-- <li role="presentation"><a role="tab" data-toggle="tab" href="#hands-philosopy">Philosophy of Care</a></li> -->
+    <li role="presentation"><a role="tab" data-toggle="tab" href="#hands-cht">CHT</a></li>
+    <li role="presentation"><a role="tab" data-toggle="tab" href="#hands-conditions">Hand Conditions</a></li>
+    <li role="presentation"><a role="tab" data-toggle="tab" href="#hands-techniques">Techniques</a></li>
+  </ul>
 
-  <div class="jumbotron hands" id="hands-general">
+<div class="tab-content">
+  <div class="tab-pane active jumbotron hands" role="tabpanel" id="hands-general">
     <h3>Hand Therapy</h3>
     <p>
       Artus Physical Therapy offers comprehensive and individualized hand therapy by a Certified Hand Therapist *(CHT). The goal of the Hand Therapy Department is to provide you with caring and effective treatment. To fully benefit from therapy, we would like you to become familiar with our services, to know what you can expect from us and what we expect from you.
     </p>
-  </div>
-
-  <div class="jumbotron hands hidden" id="hands-philosopy">
-    <h3>Philosophy of Care</h3>
     <p>
       Our goal is to empower you with knowledge. By fully understanding your condition, you will be better able to participate in your own recovery. Feel free to ask questions about your diagnosis.
     </p>
@@ -25,7 +22,12 @@
     </p>
   </div>
 
-  <div class="jumbotron hands hidden" id="hands-cht">
+  <!-- <div class="tab-pane jumbotron hands" role="tabpanel" id="hands-philosopy">
+    <h3>Philosophy of Care</h3>
+
+  </div> -->
+
+  <div class="jumbotron hands tab-pane" role="tabpanel" id="hands-cht">
     <h3>CHT... <em>&nbsp<h4 style="display: inline-block"><span>What is a Certified Hand Therapist?</span><h4></em></h3>
 
     <p>
@@ -42,7 +44,7 @@
     </p>
   </div>
 
-  <div class="jumbotron hands hidden" id="hands-conditions">
+  <div class="jumbotron hands tab-pane" role="tabpanel" id="hands-conditions">
     <h3>Conditions...
       <em>&nbsp<h4 style="display: inline-block"><span>What conditions benefit from Hand Therapy?</span><h4></em>
     </h3>
@@ -61,7 +63,7 @@
     </ul>
   </div>
 
-  <div class="jumbotron hands hidden" id="hands-techniques">
+  <div class="jumbotron hands tab-pane" role="tabpanel" id="hands-techniques">
     <h3>Techniques</h3>
       <p>
         Some of the many evaluation and treatment techniques we offer, including customized splinting:
@@ -94,6 +96,8 @@
 
 
   </div>
+
+</div>
 
 
 
