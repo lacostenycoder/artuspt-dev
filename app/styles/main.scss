@@ -150,7 +150,7 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
-  text-align: justify;
+  text-align: left;
   border-bottom: 1px solid #e5e5e5;
   .btn {
     font-size: 21px;
@@ -162,13 +162,6 @@ body {
   @extend p;
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-  p + h4 {
-    margin-top: 28px;
-  }
-}
 
 .navbar-brand > img {
   object-fit: contain;
@@ -226,6 +219,12 @@ body {
   padding-bottom: 40px;
 }
 
+.pic-icon {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+
 // #about-therapists::after { content: ''; display: block; clear: both;}
 // boostrap clearfix does this
 
@@ -238,6 +237,12 @@ ul.conditions-list {
   padding: 0;
 }
 
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  background-color: $jumbotron-bg;
+}
+
 .page-section ol {
   margin-left: auto;
   margin-right: auto;
@@ -246,10 +251,13 @@ ul.conditions-list {
   min-width: 100%;
 }
 
-
 .scut-sticky, .scut-sticky footer {
   background: black;
   color: white;
+}
+
+.verticle-center {
+  @include scut-vcenter-ib;
 }
 
 

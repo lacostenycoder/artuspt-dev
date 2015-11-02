@@ -43,18 +43,17 @@ $breadcrumb-separator:          ">" !default;
 }
 
 nav {
-  padding-top: 2px;
-  padding-bottom: 2px;
+  // padding-top: 2px;
+  // padding-bottom: 2px;
   margin-top: 0;
   top: -44px;
 }
 
 @media (min-width: 730px) {
-  ol.breadcrumb {
+  ol.breadcrumb, ul.nav.nav-tabs {
     display: inline-block;
-    min-width: 730px;
-    white-space: nowrap;
-    margin-top: 0px;
+    min-width: 100%;
+    // white-space: nowrap;
   }
 }
 
