@@ -64,11 +64,20 @@ ul {
   }
 }
 
-@media screen and (max-width: 568px) {
-  .info-top {
-    font-size: 0.8em;
-  }
+.top-pad-20 {
+  margin-top: 20px;
+  padding-top: 20px;
 }
+
+.plain-link a,
+.plain-link a:link,
+.plain-link a:visited,
+.plain-link a:hover,
+.plain-link a:active {
+    color: #FFF; /*color of your choosing*/
+    text-decoration: none;
+}
+
 
 .main{
   top: 60px;
@@ -210,6 +219,10 @@ body {
   margin: 0 auto;
 }
 
+.img-pad {
+  padding: 14px;
+}
+
 
 .bio {
   text-align: justify;
@@ -225,12 +238,47 @@ body {
   margin: 20px;
 }
 
+.pic-icon-nopad {
+  margin: 0;
+  margin-top: 50%;
+  margin-left: 0;
+  padding: 0;
+}
+
+.pic-icon:hover {
+  border: solid #337ab7 3px;
+  transform: scale(1.2);
+}
+
+.pic-icon-hover {
+  border: solid #337ab7 3px;
+  transform: scale(1.2);
+}
+
+.condition-loader-hover {
+  background-color: #eeeeee;
+}
+
 // #about-therapists::after { content: ''; display: block; clear: both;}
 // boostrap clearfix does this
 
 // fix top margin on pages with sub nav
 #about-page, #hands-page, #conditions-page {
   margin-top: -64px;
+}
+
+.insurance-page-background {
+  position: absolute;
+  margin: 10px 20px;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+  background-image: url('../images/insurance.jpg');
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.160;
+  // z-index: 9999;
 }
 
 ul.conditions-list {
@@ -272,6 +320,41 @@ ul.conditions-list {
   }
 }
 
+.footer-icon-container {
+  text-align: center;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  color: #FFF;
+  border: solid #FFF 1px;
+  border-radius: 50%;
+}
+
+span.footer-icons {
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  margin-top: 6px;
+  margin-left: -8px;
+  font-size: 1.8em;
+  color: #FFF;
+}
+
+.footer-icons a, .footer-icons:hover a, .footer-icons link {
+  text-decoration: none;
+  color: #FFF;
+}
+
+// .footer-icons span::before {
+//   content: "\00a0";
+// }
+//
+.footer-icon-container:hover, .footer-icons:hover {
+  transform: scale(1.1);
+  transition-duration: 120ms;
+}
+
+
 .flow-bottom {
   // min-height: 25vh;
 }
@@ -280,6 +363,29 @@ ul.conditions-list {
   // background-color: #333;
   padding: 0;
   margin: 0;
+}
+
+.fix-responsive-footer {
+  padding-left: 16px;
+}
+
+@media screen and (max-width: 568px) {
+  .xs-padding-0 {
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  .info-top {
+    font-size: 0.8em;
+  }
+  .pic-icons > span > .pic-icon, .pic-icons > span > .pic-icon-hover {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 2px;
+  }
+  .pic-icon-hover { border-width: 1px;}
 }
 
 /* Responsive: Portrait tablets and up */

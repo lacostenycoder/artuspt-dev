@@ -11,19 +11,37 @@ $(document).ready(function(){
      navSelector($el.attr('id'));
      showSlider($el.attr('id'));
   });
-//  breadcrumb navigation requires id with section prefix and
-// data attribute 'pageId' for grouping. this pattern is reusable
-// for pages which require sub-nav
 
-  // $(".breadcrumb a").on("click", function(){
-  //   var $active = $(".breadcrumb").find(".active");
-  //    $active.removeClass("active");
-  //    $(this).parent().addClass("active");
-  //    var $el = $(this);
-  //    var sectionId = $el.attr('id');
-  //    var pageId = $el.parent().closest('div').data('pageId');
-  //    breadcrumbSelector(pageId, sectionId);
-  // });
+  $("#about").on("click", function(){
+    $('#about-page .nav-tabs li a').first().click();
+  });
+  $("#hands").on("click", function(){
+    $('#hands-page .nav-tabs li a').first().click();
+  });
+
+  // show hover events for conditions treated when button hovers
+  $('.conditions-loader').hover(function(){
+      $('#' + $(this).data('hoverTarget')).addClass('pic-icon-hover');
+    }, function(){
+      $('#' + $(this).data('hoverTarget')).removeClass('pic-icon-hover');
+    }
+  );
+
+  $('.pic-icon').hover(function(){
+      $('#' + $(this).data('hoverTarget')).addClass('condition-loader-hover');
+    }, function(){
+      $('#' + $(this).data('hoverTarget')).removeClass('condition-loader-hover');
+    }
+  );
+
+  $('.pic-icon').click(function(){
+    $('#' + $(this).data('hoverTarget')).click();
+  });
+
+  // show directions on footer link
+  $('#map-directions').click(function(){
+    $('#contact').click();
+  });
 
   function breadcrumbSelector(pageId, sectionId){
     var hideGroup = $('.'+pageId);
@@ -107,16 +125,6 @@ $(document).ready(function(){
   $("#conditions").on('click', function(){
     $('.conditions-head').slideDown("slow", function(){});
   });
-
-
-  // $(".nav a").click(function(){
-  //   var body = $('body');
-  //   var images = ['s1.jpg', 's2.jpg','s3.jpg','s4.jpg'];
-  //   var backgroundImg = images[Math.floor(Math.random() * images.length)];
-  //   alert(typeof(backgroundImg));
-  //   body.css({'background': "url('s2.jpg') norepeat center center" });
-  //   // console.log(body.css("background-image"));
-  // })
 
 
 });
