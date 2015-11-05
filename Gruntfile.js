@@ -81,7 +81,8 @@ module.exports = function (grunt) {
             '.tmp/{,*/}*.html',
             '.tmp/styles/{,*/}*.css',
             '<%= config.app %>/images/{,*/}*',
-            '.tmp/scripts/{,*/}*.js'
+            '.tmp/scripts/{,*/}*.js',
+            '.tmp/fonts/{,*/}*.*'
           ],
           reload: true,
           port: 9000,
@@ -390,7 +391,7 @@ module.exports = function (grunt) {
           dot: true,
           cwd: 'bower_components/font-awesome',
           src: ['fonts/*.*'],
-          dest: '<%= config.dist %>'
+          dest: '<%= config.dist %>/bower_components/font-awesome'
         }]
       }
     },

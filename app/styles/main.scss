@@ -4,7 +4,10 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 @import "bootstrap_overrides.scss";
-@import "bower_components/font-awesome/scss/font-awesome.scss";
+
+$fa-font-path: "../bower_components/font-awesome/fonts";
+@import "bower_components/font-awesome/scss/font-awesome";
+
 @import "image-vingette.scss";
 @import "_scut.scss";
 
