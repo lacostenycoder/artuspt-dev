@@ -16,6 +16,20 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 
 @include scut-sticky-footer-fluid();
 
+i.fa {
+  font-size: 1.2em;
+  min-height: 46px;
+  min-width: 46px;
+  display: inline-block;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border-color: #FFF;
+  border-width: 1px;
+  border-style: solid;
+  padding-top: 8px;
+}
+
 .body {
   background-size: cover !important;
 }
@@ -318,7 +332,6 @@ ul.conditions-list {
   background-color: #333;
   color: #FFF;
   padding: 80px;
-  // margin-top: -80px;
   .footer-children {
     background-color: inherit;
     color: inherit;
@@ -326,13 +339,10 @@ ul.conditions-list {
 }
 
 .footer-icon-container {
-  text-align: center;
   display: inline-block;
-  width: 50px;
-  height: 50px;
-  color: #FFF;
-  border: solid #FFF 1px;
-  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  margin-left: 4px;
 }
 
 span.footer-icons {
