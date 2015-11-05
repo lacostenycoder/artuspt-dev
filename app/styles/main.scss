@@ -4,8 +4,10 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 @import "bootstrap_overrides.scss";
+@import "bower_components/font-awesome/scss/font-awesome.scss";
 @import "image-vingette.scss";
 @import "_scut.scss";
+
 
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 
