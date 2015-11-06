@@ -286,18 +286,46 @@ body {
   margin-top: -64px;
 }
 
-.insurance-page-background {
+.page-backgrounds {
   position: absolute;
-  margin: 10px 20px;
-  width: 80%;
-  height: 80%;
-  top: 10%;
-  left: 10%;
-  background-image: url('../images/insurance.jpg');
+  margin: 10px 0px;
+  width: 100vw;
+  height: 140vh;
+  top: -0px;
+  left: -0px;
   background-position: center center;
   background-size: cover;
+  opacity: 0.885;
+  z-index: -100;
+}
+
+.about-page-background {
+  @extend .page-backgrounds;
+  background-image: url('../images/mohagany.jpg');
+  width: 100vw;
+  height: 180vh;
+  opacity: 0.9;
+}
+
+.first-page-background {
+  @extend .page-backgrounds;
+  background-image: url('../images/intake.jpg');
+  width: 100vw;
+  height: 140vh;
+  opacity: 0.5;
+}
+
+.insurance-page-background {
+  @extend .page-backgrounds;
+  background-image: url('../images/insurance.jpg');
   opacity: 0.160;
-  // z-index: 9999;
+  z-index: 9999;
+  height: 80vh;
+}
+
+.location-page-background {
+  @extend .page-backgrounds;
+  background-image: url('../images/cp-water.jpg');
 }
 
 ul.conditions-list {
