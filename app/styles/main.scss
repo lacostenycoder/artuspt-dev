@@ -323,6 +323,33 @@ body {
   height: 80vh;
 }
 
+.insurance-div {
+  // background-image: url('../images/insurance.jpg');
+  // opacity: 0.160;
+}
+
+.insurance-div:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.275;
+    background-image: url('../images/insurance.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: -10;
+}
+
+
 .location-page-background {
   @extend .page-backgrounds;
   background-image: url('../images/cp-water.jpg');
@@ -429,6 +456,11 @@ span.footer-icons {
     margin: 2px;
   }
   .pic-icon-hover { border-width: 1px;}
+
+  .directions {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 /* Responsive: Portrait tablets and up */
