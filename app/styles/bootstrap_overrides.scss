@@ -15,7 +15,15 @@ $breadcrumb-active-color:       #337ab7 !default;
 //** Textual separator for between breadcrumb elements
 $breadcrumb-separator:          ">" !default;
 
+// $nav-font-family: 'PT Sans Narrow', sans-serif !important;
+//
+// .navbar {
+//   font-family: $nav-font-family;
+//   font-size: 1.2em;
+// }
+
 .breadcrumb {
+  // font-family: $nav-font-family;
   padding: $breadcrumb-padding-vertical $breadcrumb-padding-horizontal;
   //margin-bottom: $line-height-computed;
   list-style: none;

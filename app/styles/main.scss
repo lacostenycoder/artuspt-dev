@@ -16,7 +16,7 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 
 @include scut-sticky-footer-fluid();
 
-i.fa {
+i.fa:not(#fa-standard) {
   font-size: 1.2em;
   min-height: 46px;
   min-width: 46px;
@@ -154,6 +154,10 @@ body {
   float: none;
 }
 
+// ul.nav li a {
+//   font-family: 'PT Sans Narrow', sans-serif !important;
+// }
+
 /* Custom page header */
 .header {
   // border-bottom: 1px solid #e5e5e5;
@@ -164,6 +168,33 @@ body {
     line-height: 40px;
     padding-bottom: 19px;
   }
+}
+
+.headline {
+  position: relative;
+  top: -20px;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, .8);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  width: 100%;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 400;
+  font-size: 1.8em;
+  padding: 20px 40px 40px 40px;
+}
+
+.slide-overlay {
+  position: absolute;
+  top: 100px;
+  left: 10%;
+  @extend .headline;
+  text-align: center;
+  color: #337ab7;
+  width: 300px;
+  margin-bottom: 20px;
+  padding: 20px 20px 20px 20px;
 }
 
 /* Custom page footer */
@@ -384,6 +415,7 @@ ul.conditions-list {
 
 
 .footer-body {
+  // p, div, h1, h2, h3, h4, h5, span {font-family: 'PT Sans Narrow', sans-serif !important;}
   background-color: #333;
   color: #FFF;
   padding: 80px;
@@ -440,6 +472,7 @@ span.footer-icons {
 }
 
 @media screen and (max-width: 568px) {
+  .headline { font-size: 1.3em; font-weight: 500;}
   .xs-padding-0 {
       padding-left: 0;
       padding-right: 0;
