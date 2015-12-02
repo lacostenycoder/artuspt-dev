@@ -63,6 +63,27 @@ ul {
     padding-left:0;
 }
 
+.custom-ul li {
+  font-size: 1.2em;
+  margin-left: 20px;
+}
+
+.ul-centered ul h3 {
+  text-align: center !important;
+}
+
+.ul-centered li {
+  font-size: 1.2em;
+  margin-left: 25%;
+}
+
+#asht-logo {
+  min-width: 25%;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .list-inline {
   padding-left: 20px;
 }
@@ -253,6 +274,10 @@ body {
 
 .about-sapce {
   @extend about;
+}
+
+.pic-two-up {
+  padding-top: 20px;
 }
 
 .mug-container{
